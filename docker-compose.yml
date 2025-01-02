@@ -4,7 +4,7 @@ services:
         # image: Ar-Ray-code/darknet-ros-fp16:latest
         build:
             context: .
-            dockerfile: Dockerfile
+            dockerfile: Dockerfile.${BUILDTYPE}
         network_mode: host
         runtime: nvidia
         environment:
